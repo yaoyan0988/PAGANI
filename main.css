@@ -40,12 +40,14 @@ body nav.open {
 body .header {
   z-index: 5;
   position: fixed;
-  width: 100%;
-  height: 230px;
-  background-image: linear-gradient(to bottom, #161616, transparent);
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  height: 230px;
+  background-image: linear-gradient(to bottom, #161616, transparent);
   opacity: 0.8;
 }
 body .header .menu {
@@ -53,7 +55,6 @@ body .header .menu {
   height: 40px;
   background-color: transparent;
   color: #ededed;
-  margin-left: 30px;
 }
 body .header .logo {
   margin-left: 62px;
@@ -72,7 +73,6 @@ body .header .user {
   height: 40px;
   background-color: transparent;
   color: #ededed;
-  margin-right: 30px;
   margin-left: 10px;
 }
 @media (max-width: 800px) {
@@ -90,8 +90,8 @@ body .header .user {
 }
 body .front_page {
   width: 100%;
-  background-color: #161616;
   overflow: hidden;
+  background-color: #161616;
 }
 body .front_page .carousel-inner {
   position: relative;
@@ -101,18 +101,18 @@ body .front_page .carousel-inner .carousel-indicators {
   bottom: 0;
 }
 body .front_page .carousel-inner .carousel-item {
-  height: 100vh;
   width: 100%;
+  height: 100vh;
 }
 body .front_page .carousel-inner .carousel-item .d-block {
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   position: absolute;
   top: -20dvh;
   left: 0;
   opacity: 0.7;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 @media (max-width: 1600px) {
   body .front_page .carousel-inner .carousel-item .d-block {
@@ -135,7 +135,6 @@ body .about {
   position: relative;
   width: 100%;
   height: 100dvh;
-  display: block;
   background-image: url(./img/sketch.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -144,13 +143,12 @@ body .about .black {
   width: 100%;
   height: 100dvh;
   background-color: #161616;
-  position: absolute;
   opacity: 0.6;
 }
 body .about img {
-  position: absolute;
   display: block;
   width: 300px;
+  position: absolute;
   top: 40%;
   left: 50%;
   margin-left: -150px;
@@ -177,15 +175,15 @@ body .about p {
   }
 }
 body .product {
-  width: 100%;
-  height: 100dvh;
   display: block;
-  background-image: url(./img/backgroundlogo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
+  height: 100dvh;
+  background-image: url(./img/backgroundlogo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 body .product .pro1 {
   width: 350px;
@@ -221,11 +219,11 @@ body .product .pro1 p {
   }
 }
 body .feeter {
-  width: 100%;
-  height: 40dvh;
   display: flex;
   justify-content: space-evenly;
   padding-top: 12dvh;
+  width: 100%;
+  height: 40dvh;
   background: #161616;
 }
 body .feeter dl dt {
